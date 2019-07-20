@@ -1,0 +1,12 @@
+﻿db.total.insert({title:"新品上架",elgtitle:"NEW",ico:"/upload/product/nav.jpg",classification:"new"})
+
+db.total.insert({title:"包袋",elgtitle:"BAGS",ico:"/upload/product/nav.jpg",classification:"bags"})
+
+db.total.insert({title:"服装",elgtitle:"CLOTHES",ico:"/upload/product/nav.jpg",classification:"clothes"})
+
+db.total.insert({title:"特惠",elgtitle:"SALES",ico:"/upload/product/nav.jpg",classification:"sales"})
+
+db.total.insert({title:"鞋履",elgtitle:"SHOES",ico:"/upload/product/nav.jpg",classification:"shoes"})
+
+db.total.insert({title:"配饰",elgtitle:"ACCESSORIES",ico:"/upload/product/nav.jpg",classification:"accessories"})
+

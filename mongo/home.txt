@@ -1,0 +1,14 @@
+﻿db.home.insert({title:"海外购精品推荐",elgtitle:"Oversea Shopping Recommendation",ico:"/upload/product/oversea.jpg",classification:"oversea"})
+
+db.home.insert({title:"炫酷T恤 舒适百搭",elgtitle:"T-Shirt  Selection",ico:"/upload/product/shirt.jpg",classification:"shirt"})
+
+db.home.insert({title:"早春新品",elgtitle:"Spring Collection",ico:"/upload/product/spring.jpg",classification:"spring"})
+
+db.home.insert({title:"海外购",elgtitle:"Oversea Shopping",ico:"/upload/product/sea.jpg",classification:"sea"})
+
+db.home.insert({title:"男士主推",elgtitle:"Men's Recommendation",ico:"/upload/product/man.jpg",classification:"man"})
+
+db.home.insert({title:"女士包袋",elgtitle:"Women's Bags",ico:"/upload/product/woman-bages.jpg",classification:"woman-bages"})
+
+db.home.insert({title:"男士包袋",elgtitle:"Men's Bags",ico:"/upload/product/man-bages.jpg",classification:"man-bages"})
+

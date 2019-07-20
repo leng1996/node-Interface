@@ -1,0 +1,60 @@
+﻿mongoDB
+ database(库)
+ collection(集合)
+ document(文档)
+ field(区域)
+
+储存方式  json
+
+操作方式:obj.api()
+
+库的操作：
+	查所有库:show dbs
+	查当前库:db
+	
+	建:use 库名 （没有库就是创建，有的话就切换库名）
+	
+	删:db.dropDatabase(); (删除当前库)
+集合的操作：
+	建：db.createCollection("表名",{配置})
+	     配置:{size:文件大小,capped:true,max:条数}
+	查：show collections /db.getCollectionNames()        //表名 | ["表名"]
+	删：db. 表|集合 .drop()
+文档的操作：
+	增：db.集合.save({})  //如果又重复信息会替换
+	      db.集合.insert({}) //如果又重复信息不会替换
+	      db.集合.insertOne({})
+	删：db.集合.deleteOne({要删除数据的条件描述})
+	      db.集合.remove({要删除数据的条件描述})
+	      db.集合.remove({}) //清空表
+	改：db.集合.uppate({查询的条件},{替换的条件})
+	    替换后的：{$set:{数据}}   {$inc:{age:增加或减少}}	
+	查：
+	     所有:db.集合.find({条件})
+	     条数:db.集合.find().count()
+	     去重:db.集合.distinct(key)
+
+
+	     条件：
+		{age:22}           //age ==22
+		{age:{$gt:22}}   //age > 22
+		{age:{$lt:22}}    //age < 22
+		{age:{$gte:22}} //age>=22
+		{age:{$lte:22}}  //age<=22
+		{age:{$lte:122,$gte:22}}     //age<=122 && age>=22
+		{$or:[{age:22},{age:122}]}   //22 or 122
+		{key:value,key2,value2}     //value && value2
+		{name:/正则/}
+	     指定要显示列区域:
+		db.集合.find({条件},{列区域:1|0})   //1显示 0不显示
+	     限定:
+	                db.集合.find().limit(number)  //限定
+		db.集合.find().skip(number)  //跳过
+
+	    排序：
+		升：db.集合.find().sort({key:1,key2:-1})
+		降：db.集合.find().sort({key:-1})
+
+
+
+	

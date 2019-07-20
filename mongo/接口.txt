@@ -1,0 +1,58 @@
+登录：
+       post
+       localhost:3000/api/login
+       username/password/save（是否中cookie session  true/false jl_username名）
+       返回   error：1  mess：“信息”
+
+mongo 
+     user :  username 、 password 、 nikename、  follow 、 fans、 time 、ico 
+     home:商品分类：title  elgtitle  ico  classification(分类)
+     total:商品总分类：title  elgtitle  ico  classification(分类)
+     list:商品列表+信息：newprice/oldprice/pinpai/kuanshi/bianhao/size/caizhi/color/chandi/nei/wai/liaojiepinpai/ico
+
+用户页：
+         get
+          localhost:3000/api/user
+         error:1,mess:"未登录"
+       error：0；mess：“信息”
+
+
+注销：
+      put
+       localhost:3000/api/logout
+        {error:0,mess:"注销成功"}
+
+
+注册
+    post
+    localhost:3000/api/reg
+     err:0,mess:'注册成功',
+
+home
+    get
+     localhost:3000/api/home	
+   _page：页数
+   _limit：几条
+   _sort：排序
+   q:内容
+   id
+
+
+
+buycar
+     post
+     localhost:3000/api/buycar
+     user_id,bianhao_id,num
+
+
+
+
+
+
+
+
+
+
+
+
+
